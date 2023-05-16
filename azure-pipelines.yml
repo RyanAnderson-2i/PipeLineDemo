@@ -23,6 +23,6 @@ stages:
           mvn site -DgenerateReports=false
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: './target/surefire-reports/site/'
+        PathtoPublish: './target/site/'
         ArtifactName: 'drop'
         publishLocation: 'Container'
