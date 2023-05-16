@@ -19,3 +19,8 @@ stages:
       inputs:
         script: |
           mvn clean verify
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: './traget/surefire-reports'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
