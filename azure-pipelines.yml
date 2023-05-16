@@ -21,6 +21,6 @@ stages:
           mvn clean verify
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: './traget/surefire-reports'
+        PathtoPublish: './target/surefire-reports'
         ArtifactName: 'drop'
         publishLocation: 'Container'
