@@ -58,7 +58,6 @@
                     </includes>
                     <excludes>
                         <!--Dont run these-->
-                        <exclude>**/Unit*.java</exclude>
                     </excludes>
                     <systemPropertyVariables>
                         <browser>${browser}</browser>
