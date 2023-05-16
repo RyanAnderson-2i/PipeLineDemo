@@ -13,7 +13,6 @@ stages:
       displayName: 'Install dependencies'
       inputs:
         script: |
-          sudo apt-get update
           sudo apt-get install -y maven chromium-browser
     - task: CmdLine@2
       displayName: 'Run tests'
