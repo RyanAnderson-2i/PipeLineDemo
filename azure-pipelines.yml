@@ -18,9 +18,10 @@ stages:
       displayName: 'Run tests'
       inputs:
         script: |
-          mvn clean verify
+          mvn clean surefire-report:report
+          mvn site -DgenerateReports=false
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: './target/surefire-reports'
+        PathtoPublish: './target/surefire-reports/site/'
         ArtifactName: 'drop'
         publishLocation: 'Container'
