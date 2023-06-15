@@ -3,6 +3,7 @@ package com.example.pipelinedemo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,7 @@ public class Tests {
     }
 
     @Test
+    @Tag("Test1")
     void test1(){
         //This test opens up the main page, checks for 2 headings, clicks the contact link and checks for a heading there
 
@@ -52,6 +54,7 @@ public class Tests {
     }
 
     @Test
+    @Tag("Test2")
     void test2(){
         //This test checks 2 different headings, then clicks a nav link on the page and checks a heading there
 
@@ -71,6 +74,7 @@ public class Tests {
     }
 
     @Test
+    @Tag("Test3")
     void test3(){
         //This test closes the pop-up at the bottom of the page and then clicks a nav link, then checks a heading there
 
