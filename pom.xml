@@ -67,6 +67,8 @@
                     <systemPropertyVariables>
                         <browser>${browser}</browser>
                     </systemPropertyVariables>
+                    <parallel>classes</parallel>
+                    <threadCount>5</threadCount>
                 </configuration>
             </plugin>
             <plugin>
