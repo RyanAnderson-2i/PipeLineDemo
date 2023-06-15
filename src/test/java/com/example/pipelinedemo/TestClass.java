@@ -11,11 +11,6 @@ public class TestClass {
 
     public static void main(String[] args) {
 
-//        WebDriverManager.chromedriver().setup();
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--remote-allow-origins=*");
-//        ChromeDriver driver = new ChromeDriver();
-//        driver.get("https://2itesting.com/");
-//        driver.quit();
+
     }
 }
